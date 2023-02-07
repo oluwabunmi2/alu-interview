@@ -6,8 +6,9 @@ minimum operations
 
 def minOperations(n):
     """
-    given a number n, calculate the fewest no. of operations
-    that result to n and H characters in the file.
+   In a text file, there is a single character H
+   Your text editor can execute only two operations in this file
+   Given a number n, write a method that calculates the fewest number of operations
     """
 
     if n <= 1:
