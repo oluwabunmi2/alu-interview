@@ -6,11 +6,11 @@ def minOperations(n):
     """Returns an integer
     If n is impossible to achieve, return 0"""
 
-    if not n or n < 2:
+     if n <= 1:
         return 0
-    numberOperations = 0
-    for time in range(2, n+1):
-        while(n % time == 0):
-            numberOperations += time
-            n = n / time
-    return(numberOperations)
+
+    for i in range(2, int((n/2)+1)):
+        if n % i == 0:
+            return minOperations(int(n/i)) + i
+    return n
+
