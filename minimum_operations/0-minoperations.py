@@ -5,9 +5,8 @@ minimum operations
 
 def minOperations(n):
     """
-    In a text file, there is a single character H
-    Your text editor can execute only two operations in this file
-    Copy All and Paste. Given a number n
+    given a number n, calculate the fewest no. of operations
+    that result to n and H characters in the file.
     """
 
     if n <= 1:
